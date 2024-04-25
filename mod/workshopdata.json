@@ -1,0 +1,17 @@
+{
+  "Title": "Spawn Resetter",
+  "Description": "Adds a dev tools keybind to reset saved spawns next time a region loads. Press BACKSPACE while dev tools is enabled to activate.",
+  "ID": "alduris.spawnresetter",
+  "Version": "1.0",
+  "TargetGameVersion": "",
+  "Requirements": "devtools",
+  "RequirementNames": "",
+  "Authors": "Alduris",
+  "Visibility": "Unlisted",
+  "Tags": [
+    "Tools"
+  ],
+  "WorkshopID": 3232143310,
+  "UploadFilesOnly": false,
+  "UploadThumbnail": false
+}

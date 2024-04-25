@@ -3,7 +3,7 @@
   "name": "Spawn Resetter",
   "version": "1.0",
   "authors": "Alduris",
-  "description": "Adds a dev tools keybind to reset saved spawns next time a region loads.<LINE>Press DELETE while dev tools is enabled to activate.",
+  "description": "Adds a dev tools keybind to reset saved spawns next time a region loads.<LINE>Press BACKSPACE while dev tools is enabled to activate.",
   "tags": [],
   "requirements": ["devtools"],
   "requirements_names": [],
