@@ -27,9 +27,9 @@ sealed class Plugin : BaseUnityPlugin
         {
             needsToReset = true;
         }
-        if (needsToReset)
+        if (needsToReset && self.cameras[0].room != null)
         {
-            self.devToolsLabel.text += " : Reset spawns activated";
+            self.devToolsLabel.text += " : Resetting spawns next region load";
         }
     }
 
