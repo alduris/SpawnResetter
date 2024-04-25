@@ -1,11 +1,11 @@
 ﻿{
-  "id": "testmod",
-  "name": "Test Mod",
-  "version": "0.1.0",
-  "authors": "Author",
-  "description": "Put a neat description here",
+  "id": "alduris.spawnresetter",
+  "name": "Spawn Resetter",
+  "version": "1.0",
+  "authors": "Alduris",
+  "description": "Adds a dev tools keybind to reset saved spawns next time a region loads.<LINE>Press DELETE while dev tools is enabled to activate.",
   "tags": [],
-  "requirements": [],
+  "requirements": ["devtools"],
   "requirements_names": [],
   "checksum_override_version": false
 }

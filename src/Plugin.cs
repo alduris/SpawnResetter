@@ -6,28 +6,20 @@ using System.Security.Permissions;
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618
 
-namespace TestMod;
+namespace SpawnResetter;
 
-[BepInPlugin("com.author.testmod", "Test Mod", "0.1.0")]
+[BepInPlugin("alduris.spawnresetter", "Spawn Resetter", "1.0")]
 sealed class Plugin : BaseUnityPlugin
 {
     bool init;
 
     public void OnEnable()
     {
-        // Add hooks here
-        On.RainWorld.OnModsInit += OnModsInit;
+        On.WorldLoader.GeneratePopulation += WorldLoader_GeneratePopulation;
     }
 
-    private void OnModsInit(On.RainWorld.orig_OnModsInit orig, RainWorld self)
+    private void WorldLoader_GeneratePopulation(On.WorldLoader.orig_GeneratePopulation orig, WorldLoader self, bool fresh)
     {
-        orig(self);
-
-        if (init) return;
-
-        init = true;
-
-        // Initialize assets, your mod config, and anything that uses RainWorld here
-        Logger.LogDebug("Hello world!");
+        orig(self, fresh);
     }
 }
